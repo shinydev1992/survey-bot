@@ -1,2 +1,2 @@
-# suvey_bot
-Suvey_bot
+# SurveyBot
+Example of using SignalWire's AI Agent to conduct Surveys or Polls
