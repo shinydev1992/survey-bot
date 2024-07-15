@@ -10,9 +10,13 @@ import sqlite3
 
 surveybot = Flask(__name__)
 
+@surveybot.route("/")
+def hello_world():
+    return "<p>Hello, World!</p>"
+
 @surveybot.route('/', methods=['POST'])
 def main_ai_prompt():
-    swml_web_hook_base_url = '<your_webhook_url>'
+    swml_web_hook_base_url = 'https://d7f7-85-195-72-66.ngrok-free.app'
     swml_ai_prompt = '''Your name is SurveyBot.  Your job is to survey the caller with questions from a database.
     
     ### How to follow up on questions answered and protocols to follow                   
